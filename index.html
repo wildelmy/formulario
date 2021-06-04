@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+
+  <body>
+    <form id="survey-form">
+     
+      <h1 id="title">Formulario de inscripción</h1>
+
+      <p id="description">Rellena este formulario y espera nuestra llamada</p>
+
+      <div class="group">
+        <label id="name-label">Nombre</label>
+        <br>
+        <input type="text" id="name" />
+      </div>
+      
+      <div class="group">
+        <label>Apellido</label>
+        <br>
+        <input type="text" />
+      </div>
+
+      <div class="group">
+        <p>Selecciona tu género</p>
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Masculino</label>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">Femenino</label>
+        <input type="radio" name="gender" value="other" id="other" />
+        <label for="other">Prefiero no decirlo</label>
+      </div>
+
+      <div class="group age">
+        <label>Edad</label>
+        <input type="number" max="130" min="18" />
+      </div>
+
+      <div class="group">
+        <p>¿Que actividades te gustan?</p>
+
+        <label>Cocinar</label>
+        <input type="checkbox" name="cooking" value="Cocinar" />
+
+        <label>Caminar</label>
+        <input type="checkbox" name="walking" value="Caminar" />
+
+        <label>Caminar</label>
+        <input type="checkbox" name="running" value="Caminar" />
+      </div>
+
+      <div class="group">
+        <label id="number-label">Telefono</label>
+        <br>
+        <input type="number" id="number" />
+      </div>
+      
+      <div class="group">
+        <label id="email-label">Correo Electronico</label>
+        <br>
+        <input type="email" id="email" />
+      </div>
+
+      <div class="group">
+        <label for="country">Selecciona tu país<label>
+        <br>
+        <select name="country" id="dropdown">
+          <option value="Venezuela">Venezuela</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Brazil">Brazil</option>
+          <option value="México">Mexico</option>
+        </select>
+      </div>
+      <label> Cuentanos algo sobre sobre ti </label>
+      <textarea cols="40" rows="3"></textarea>
+      <button type="submit" id="submit">Enviar formulario</button>
+    </form>
+  </body>
+</html>
